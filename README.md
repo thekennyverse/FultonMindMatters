@@ -1,18 +1,23 @@
 # FultonMindMatters
 
-Fulton Mind Matters is a mental health support platform based in Atlanta, Georgia, dedicated to providing access to resources and information about mental health in Fulton County. This MERN (MongoDB, Express.js, React.js, Node.js) project aims to create a supportive online community, connecting individuals in need with reliable mental health resources specific to the Atlanta area.
+Fulton Mind Matters is a mental health support platform based in Atlanta, Georgia, dedicated to providing access to resources and information about mental health in Fulton County. The project aims to create a supportive online community, connecting individuals in need with reliable mental health resources specific to the Atlanta area.
 
 Features
-Comprehensive Resources: Access a wide range of mental health resources specific to Fulton County and the Atlanta area, including therapy centers, support groups, hotlines, and professional counselors.
+Home page introducing Fulton Mind Matters
+Resources page listing Atlanta/Fulton County mental health resources
+About page describing the mission and creators
+Contact page with form to get in touch with questions
+User authentication to allow saving favorite resources
+Search bar to easily lookup local resources
+Usage
+The app can be accessed online at www.fultonmindmatters.com 
 
-Community Forums: Engage with others in a safe and supportive online environment. Share experiences, offer support, and connect with individuals who understand your struggles.
+Development
+The app was built using:
 
-Expert Guidance: Find articles, guides, and expert advice from mental health professionals in Atlanta. Stay informed about the latest treatments, therapies, and coping strategies.
+React - Front-end framework
+Node/Express - Backend API
+PostgreSQL - Database
+JWT - Authentication
 
-User Profiles: Create personalized user profiles to track your progress, save favorite resources, and participate in community discussions.
 
-Technologies Used
-Frontend: React.js, HTML, CSS, JavaScript
-Backend: Node.js, Express.js
-Database: MongoDB
-Authentication: JSON Web Tokens (JWT)
