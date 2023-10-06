@@ -19,5 +19,3 @@ React - Front-end framework
 Node/Express - Backend API
 PostgreSQL - Database
 JWT - Authentication
-
-
