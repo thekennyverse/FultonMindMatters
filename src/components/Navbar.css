@@ -22,3 +22,19 @@
     text-decoration: underline;
   }
   
+ 
+  
+ /* HOMEPAGE.css */
+
+body {
+  background-image: url('/Users/kennyverse/Digitalcraft/Mental health project/fultonmindmatters/public/image/ocean.png'); /* Path to your image from the public folder */
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+}
