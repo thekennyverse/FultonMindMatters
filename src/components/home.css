@@ -1,0 +1,36 @@
+/* Home.css */
+
+.login-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px; 
+  }
+  
+  .login-form h1 {
+    text-align: center; 
+  }
+  
+  .login-form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .login-form button {
+    width: 100%;
+    padding: 10px; 
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .login-form button:hover {
+    background-color: #0062cc;
+    cursor: pointer;
+  }
