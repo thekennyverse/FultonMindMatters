@@ -1,7 +1,7 @@
 // Navbar.js
 
 import React from 'react';
-import './Navbar.css'; 
+import './navbar.css'; 
 
 import { Link } from 'react-router-dom';
 
@@ -10,8 +10,8 @@ const Navbar = () => {
    
     <nav className="navbar">
     <ul className="nav-list">
-      <Link to="/">Home</Link> 
-      <Link to="aboutus">aboutus</Link>
+      <Link to="/home">Home</Link> 
+      <Link to="/aboutus">About Us</Link>
       <Link to="/resources">Resources</Link>
       <Link to="/contact">Contact</Link>  
     </ul>
