@@ -83,5 +83,25 @@ function Contact() {
   );
 
 }
+// return (
+//   <div className="contact">
+
+//     <h1>Contact Us</h1>
+    
+//     <p>If you need to speak to an emergency counselor immediately, you can contact our team members below 24/7.</p>
+    
+//     <p>Our counselors are trained mental health professionals who can provide support and resources in a crisis.</p>
+
+//     // card slider component
+
+//     <p>Please reach out if you need someone to talk to - we are here to help.</p>
+
+//   </div>
+// );
+
+// }
+
+
+
 
 export default Contact;

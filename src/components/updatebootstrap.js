@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar as BootstrapNavbar, Nav, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import './navbar.css'; 
 
 const Navbar = () => {
   return (
@@ -9,11 +10,11 @@ const Navbar = () => {
       <Nav className="mr-auto">
         <Nav.Link as={Link} to="/aboutus">About Us</Nav.Link>
         <Nav.Link as={Link} to="/resources">Resources</Nav.Link>
-        <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-          <NavDropdown.Item as={Link} to="/dropdown-item-1">Dropdown Item 1</NavDropdown.Item>
-          <NavDropdown.Item as={Link} to="/dropdown-item-2">Dropdown Item 2</NavDropdown.Item>
+        <NavDropdown title="Additional Resources" id="basic-nav-dropdown">
+          <NavDropdown.Item as={Link} to="/dropdown-item-1">Shelter</NavDropdown.Item>
+          <NavDropdown.Item as={Link} to="/dropdown-item-2">Family Resources </NavDropdown.Item>
           <NavDropdown.Divider />
-          <NavDropdown.Item as={Link} to="/dropdown-item-3">Dropdown Item 3</NavDropdown.Item>
+          <NavDropdown.Item as={Link} to="/dropdown-item-3">Financial Assistance</NavDropdown.Item>
         </NavDropdown>
         <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
       </Nav>
@@ -22,3 +23,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

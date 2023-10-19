@@ -37,4 +37,4 @@ function CollapsibleExample() {
   );
 }
 
-export default CollapsibleExample;
+export default Navbar;
