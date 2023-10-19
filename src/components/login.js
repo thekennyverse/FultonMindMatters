@@ -2,13 +2,18 @@
 
 import React, {useState} from 'react'
 
-function Login({setIsLoggedIn}) {
+import './login.css';
+
+function Login({setIsLoggedIn, setToggleLogin}) {
 
   const [formData, setFormData] = useState({
     username: '',
     password: ''
   })
 
+  const handleOnClick = () => {
+    setToggleLogin(false);
+  }
 
   const handleOnChange = (e) => {
     const name = e.target.placeholder.toLowerCase();
@@ -20,29 +25,26 @@ function Login({setIsLoggedIn}) {
     }))
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const body = {
-      loginObj: formData
+    const method = "POST";
+    const body = JSON.stringify(formData);
+    const url = 'http://localhost:4000/login';
+    const headers = {
+      'Content-Type': 'application/json',
     };
 
-    const result = fakeFetchCall("local:hostkjvdkfjhkdj", body)
-    setIsLoggedIn(result)
+    const response = await fetch(url, {
+      method,
+      headers,
+      body
+    });
+
+    const data = await response.json();
+    setIsLoggedIn(data.authenticated)
   }
 
-
-  const fakeFetchCall = (url, body) => {
-    const fakeDatabase = {
-      username: 'abc',
-      password: 'abc'
-    }
-
-    const { loginObj } = body
-    return fakeDatabase.username === loginObj.username &&
-      fakeDatabase.password === loginObj.password
-  }
-  
 
   return (
     <div className="login-page">
@@ -54,6 +56,7 @@ function Login({setIsLoggedIn}) {
         <input type="password" placeholder="Password" value={formData.password} onChange={handleOnChange}/>
         <button type="submit">Log In</button>
       </form>
+      <button onClick={handleOnClick} className="signup">Not signed up?</button>
     </div>
   )
 }

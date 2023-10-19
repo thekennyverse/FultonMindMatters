@@ -64,8 +64,8 @@ function Contact() {
       
         <div className="card" style={{transform: `translateX(-${index * 100}%)`}}>
         
-          {team.map(member => (
-            <div className="card-container">
+          {team.map((member, index) => (
+            <div key={index} className="card-container">
               <h3>{member.name}</h3>
               <p>{member.role}</p> 
               <p>{member.email}</p>
