@@ -5,6 +5,8 @@ import AboutUs from './aboutus';
 import Home from './home'; 
 import Resources from './resources';
 import Contact from './contact';
+import Login from './login';
+import Registration from './registration';
 
 export default function Paths() {
 
@@ -23,6 +25,10 @@ export default function Paths() {
         <Route path="/resources" element={<Resources />} />
         
         <Route path="/contact" element={<Contact />} />
+
+        <Route path="/login" element={<Login />} />
+
+        <Route path="/register" element={<Registration />} />
         
       </Routes>
     

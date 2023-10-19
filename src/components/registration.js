@@ -1,12 +1,17 @@
 // Registration.js
 import React, { useState } from 'react';
+import './registration.css';
 
-const Registration = () => {
+const Registration = ({setIsLoggedIn, setToggleLogin}) => {
   const [formData, setFormData] = useState({
     username: '',
     email: '',
     password: '',
   });
+
+  const handleOnClick = () => {
+    setToggleLogin(true);
+  }
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -16,12 +21,27 @@ const Registration = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-  
-    console.log('Registration data submitted:', formData);
- 
-  };
+
+    const method = "POST";
+    const body = JSON.stringify(formData);
+    const url = 'http://localhost:4000/register';
+    const headers = {
+      'Content-Type': 'application/json',
+    };
+
+    const response = await fetch(url, {
+      method,
+      headers,
+      body
+    });
+
+    console.log("register res: ", response)
+    const data = await response.json();
+    setIsLoggedIn(data.authenticated)
+  }
 
   return (
     <div>
@@ -32,15 +52,12 @@ const Registration = () => {
           <input type="text" name="username" value={formData.username} onChange={handleInputChange} required />
         </div>
         <div>
-          <label>Email:</label>
-          <input type="email" name="email" value={formData.email} onChange={handleInputChange} required />
-        </div>
-        <div>
           <label>Password:</label>
           <input type="password" name="password" value={formData.password} onChange={handleInputChange} required />
         </div>
         <button type="submit">Register</button>
       </form>
+      <button onClick={handleOnClick} className="signup">Have an account? Sign in</button>
     </div>
   );
 };
