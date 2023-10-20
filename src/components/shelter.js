@@ -1,16 +1,18 @@
 import React from 'react';
 
-function Shelters() {
 
-  const shelters = [
-    {  
+function Shelters() {
+  const shelters = [ 
+    
+
+    {
       name: 'Atlanta City Baptist Rescue Mission',
       address: '316 Peters St SW, Atlanta, GA 30313',
       phone: '(404) 577-3409'
     },
     {
       name: 'City of Refuge',
-      address: '1300 Joseph E Boone Blvd NW, Atlanta', 
+      address: '1300 Joseph E Boone Blvd NW, Atlanta',
       phone: '(404) 952-1201'
     },
     {
@@ -21,7 +23,7 @@ function Shelters() {
     {
       name: 'Central Outreach & Advocacy',
       address: '201 Washington St SW, Atlanta, GA 30303',
-      phone: '(404) 659-7119'  
+      phone: '(404) 659-7119'
     },
     {
       name: 'Odyssey III',
@@ -33,7 +35,7 @@ function Shelters() {
       address: '115 Church St, Decatur, GA 30030',
       phone: '(404) 377-5365'
     },
-    {  
+    {
       name: 'Atlanta Mission',
       address: '2353 Bolton Rd NW, Atlanta, GA 30318',
       phone: '(404) 588-4000'
@@ -80,13 +82,19 @@ function Shelters() {
   ];
 
   return (
-    <div className="shelters">
-    
-      // Rest of component
-
+    <div className="aboutus">
+      <h1>Shelters in Atlanta, GA</h1>
+      <ul className="shelters-list">
+        {shelters.map((shelter, index) => (
+          <li key={index} className="shelter-item">
+            <strong>{shelter.name}</strong>
+            {shelter.address && <p><strong>Address:</strong> {shelter.address}</p>}
+            {shelter.phone && <p><strong>Phone:</strong> {shelter.phone}</p>}
+          </li>
+        ))}
+      </ul>
     </div>
   );
-
 }
 
 export default Shelters;
