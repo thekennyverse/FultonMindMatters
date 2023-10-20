@@ -7,6 +7,9 @@ import Resources from './resources';
 import Contact from './contact';
 import Login from './login';
 import Registration from './registration';
+import Family from './family';
+import Finicial from './finicial';
+import Shelter from './shelter';
 
 export default function Paths() {
 
@@ -29,6 +32,13 @@ export default function Paths() {
         <Route path="/login" element={<Login />} />
 
         <Route path="/register" element={<Registration />} />
+
+        <Route path="/family" element={<Family/>} />
+
+           <Route path="/finicial" element={<Finicial/>} />
+
+           <Route path="/shelter" element={<Shelter/>} />
+        
         
       </Routes>
     

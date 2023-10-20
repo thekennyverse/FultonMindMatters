@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import './registration.css';
 
+
 const Registration = ({setIsLoggedIn, setToggleLogin}) => {
   const [formData, setFormData] = useState({
     username: '',
@@ -44,7 +45,7 @@ const Registration = ({setIsLoggedIn, setToggleLogin}) => {
   }
 
   return (
-    <div>
+    <div className="registration-page">         
       <h2>Registration</h2>
       <form onSubmit={handleSubmit}>
         <div>
