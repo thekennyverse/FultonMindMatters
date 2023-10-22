@@ -55,10 +55,13 @@ a:hover {
 }
 
  
+/* The CSS code you provided is styling the `body` element. */
 body {
   background-image: url('/Users/kennyverse/Digitalcraft/Mental Health Project/fultonmindmatters/public/image/main.JPG'); 
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
   min-height: 100vh;
   margin: 0;
   display: flex;

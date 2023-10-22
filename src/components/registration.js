@@ -45,7 +45,8 @@ const Registration = ({setIsLoggedIn, setToggleLogin}) => {
   }
 
   return (
-    <div className="registration-page">         
+    <div className='registrationDiv'>
+<div className="registration-page">         
       <h2>Registration</h2>
       <form onSubmit={handleSubmit}>
         <div>
@@ -60,6 +61,8 @@ const Registration = ({setIsLoggedIn, setToggleLogin}) => {
       </form>
       <button onClick={handleOnClick} className="signup">Have an account? Sign in</button>
     </div>
+    </div>
+    
   );
 };
 

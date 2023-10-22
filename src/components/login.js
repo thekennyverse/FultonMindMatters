@@ -47,7 +47,8 @@ function Login({setIsLoggedIn, setToggleLogin}) {
 
 
   return (
-    <div className="login-page">
+    <div className="loginDiv">
+<div className="login-page">
       <h1>Welcome to Fulton Mind Matters</h1>
       <p>Fulton County #1 source for Resources</p>
       
@@ -58,6 +59,8 @@ function Login({setIsLoggedIn, setToggleLogin}) {
       </form>
       <button onClick={handleOnClick} className="signup">Not signed up?</button>
     </div>
+    </div>
+    
   )
 }
 
