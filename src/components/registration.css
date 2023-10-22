@@ -1,12 +1,12 @@
 /* Login.css */
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; 
-    background-color: #000; 
-  }
+.registrationDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  width: 100vw;
+}
   
   .registration-page {
     max-width: 400px;
