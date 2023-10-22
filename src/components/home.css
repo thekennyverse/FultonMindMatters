@@ -1,0 +1,47 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .aboutus {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .quiz {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .options {
+    margin-top: 10px;
+  }
+  
+  .option {
+    margin-bottom: 10px;
+  }
+  
+  .explanation {
+    margin-top: 20px;
+  }
+  
+  button {
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  

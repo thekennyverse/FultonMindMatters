@@ -15,6 +15,12 @@ const Navbar = () => {
         <li className="nav-item">
           <Link to="/resources">Resources</Link>
         </li>
+        <li className="nav-item">
+          <Link to="/new">Mental Health News</Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/health"> Support HealthCare Workers </Link>
+        </li>
         <li className="nav-item dropdown">
           More Resources
           <ul className="dropdown-content">
