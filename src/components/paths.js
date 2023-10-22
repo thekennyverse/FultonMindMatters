@@ -10,6 +10,10 @@ import Registration from './registration';
 import Family from './family';
 import Finicial from './finicial';
 import Shelter from './shelter';
+import New from './new';
+import Health from './health';
+import Footer from './footer';
+
 
 export default function Paths() {
 
@@ -18,6 +22,7 @@ export default function Paths() {
 
 
       <Navbar />
+      
       
       <Routes>
       
@@ -38,10 +43,17 @@ export default function Paths() {
            <Route path="/finicial" element={<Finicial/>} />
 
            <Route path="/shelter" element={<Shelter/>} />
-        
+
+           <Route path="/new" element={<New/>} />
+
+           <Route path="/health" element={<Health/>} />
+
+
+           
+           
         
       </Routes>
-    
+      <Footer />
     </BrowserRouter>
   );
 

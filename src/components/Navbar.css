@@ -1,8 +1,8 @@
 /* Navbar.css */
 
 .navbar {
-  background-color: #333;
-  color: white;
+  
+  color: rgb(12, 12, 12);
   padding: 15px 20px;
   text-decoration: none;
 }
@@ -24,15 +24,15 @@
 }
 
 a {
-  color: white;
+  color: rgb(0, 0, 1);
   text-decoration: none;
 }
 
 a:hover {
-  color: #9d9d9d;
+  color: #0b0b0b;
 }
 
-/* Dropdown styles */
+
 .dropdown {
   position: relative;
 }
@@ -40,13 +40,13 @@ a:hover {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: black;
+  background-color: rgb(221, 26, 26);
   min-width: 160px;
   z-index: 1;
   list-style: none;
   padding: 0;
   margin: 0;
-  border: 1px solid #ddd;
+  border: 1px solid #c62424;
   border-radius: 4px;
 }
 
@@ -55,17 +55,33 @@ a:hover {
 }
 
  
-/* The CSS code you provided is styling the `body` element. */
+
 body {
-  background-image: url('/Users/kennyverse/Digitalcraft/Mental Health Project/fultonmindmatters/public/image/main.JPG'); 
-  background-size: cover;
+  background-image: url('/Users/kennyverse/Digitalcraft/Mental Health Project/fultonmindmatters/public/image/main.JPG');
+  background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  min-height: 100vh;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  color: white;
-  font-size: 20px;
+  max-width: 20000px; 
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+@media (min-width: 1200px) {
+  body {
+    background-image: url('/Users/kennyverse/Digitalcraft/Mental Health Project/fultonmindmatters/public/image/main.JPG');
+  }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  body {
+    background-image: url('/Users/kennyverse/Digitalcraft/Mental Health Project/fultonmindmatters/public/image/main.JPG'); 
+  }
 }

@@ -10,32 +10,32 @@ const Contact = () => {
   const team = [
     {
       name: 'Seth Smith ',
-      role: 'Developer',
+      role: 'Community Outreach Coordinator:',
       email: 'seth.smith@fultonmind.com',
       image: '/image/sethImage.png'
     },
     {
       name: 'Liam Johnson',
-      role: 'Developer',
+      role: 'Social Worker',
       email: 'liam.johnson@fultonmind.com',
       image: '/image/mwhealthcare.png' 
     },
     {
       name: 'Sophia Lee',
-      role: 'Designer',
+      role: 'Clinical Psychologist',
       email: 'sophia.lee@fultonmind.com',
       image: '/image/bwhealthcare.png' 
     },
     
     {
       name: 'Ava Martinez',
-      role: 'Designer',
+      role: 'Psychiatric Nurse Practitioner',
       email: 'avs.martinez@fultonmind.com',
       image: '/image/bthealthcare.png' 
     },
     {
       name: 'Elijah Wilson',
-      role: 'Developer',
+      role: 'Occupational Therapist',
       email: 'elijah.wilson@fultonmind.com',
       image:  '/image/bmmhealthcare.png' 
     },
