@@ -14,11 +14,10 @@ import New from './new';
 import Health from './health';
 import Footer from './footer';
 
-
 export default function Paths() {
 
   return (
-    <BrowserRouter>
+    <BrowserRouter className="container">
 
 
       <Navbar />

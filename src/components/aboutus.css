@@ -1,34 +1,33 @@
-/* Bolder heading */
+
 h2 {
     font-weight: 700; 
   }
   
-  /* Increase padding */  
+
   .aboutus {
     padding: 2em;
   }
   
-  /* Add background */
+
   .aboutus {
     background: rgba(214, 211, 221, 0.8);
-  }
-  
-  /* Bigger font size */
-  .aboutus {
     font-size: 1.2rem;
+    margin-bottom: 2em;
   }
   
-  /* More line height */  
+
+
+  
+   
   .aboutus p {
     line-height: 1.6;
   }
-  
-  /* Wider margins */
+ 
   .aboutus {
-    margin: 2em; 
+    margin: 2em 4em;
   }
   
-  /* Box shadow */
+  
   .aboutus {
     box-shadow: 0 4px 16px rgba(179, 145, 145, 0.1);
   }

@@ -10,7 +10,7 @@ export default function App() {
   const [toggleLogin, setToggleLogin] = useState(true)
 
   const loadPaths = () => {
-    if (isLoggedIn) return (<Paths/>)
+    if ( isLoggedIn) return (<Paths/>)
     else {
       if (toggleLogin) return (<Login setIsLoggedIn={setIsLoggedIn} setToggleLogin={setToggleLogin}/>)
       else return (<Registration setIsLoggedIn={setIsLoggedIn} setToggleLogin={setToggleLogin}/>)
@@ -18,7 +18,7 @@ export default function App() {
   }
 
   return (
-    <div>
+    <div className="headContainer">
       {loadPaths()}
     </div>
   );

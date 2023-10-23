@@ -1,6 +1,7 @@
-// Registration.js
+
 import React, { useState } from 'react';
 import './registration.css';
+
 
 
 const Registration = ({setIsLoggedIn, setToggleLogin}) => {
@@ -23,6 +24,7 @@ const Registration = ({setIsLoggedIn, setToggleLogin}) => {
   };
 
 
+ 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
