@@ -16,20 +16,20 @@ const Footer = () => {
         <div className='footer-section'>
           <h4>Follow Us</h4>
           <div className='social-icons'>
-            <a href='https://www.facebook.com/fultonmindmatters' target='_blank' rel='noopener noreferrer'>
-              <img className='social-icon' src='/images/facebook.png' alt='Facebook' />
+            <a href='https://www.facebook.com/profile.php?id=61552518998230&sk=about' target='_blank' rel='noopener noreferrer'>
+              <img className='social-icon' src='/image/facebook.png' alt='Facebook' />
             </a>
-            <a href='https://www.twitter.com/fultonmindmatters' target='_blank' rel='noopener noreferrer'>
-              <img className='social-icon' src='/images/twitter.png' alt='Twitter' />
+            <a href='https://twitter.com/fultonminds' target='_blank' rel='noopener noreferrer'>
+              <img className='social-icon' src='/image/twitter.png' alt='Twitter' />
             </a>
-            <a href='https://www.youtube.com/fultonmindmatters' target='_blank' rel='noopener noreferrer'>
-              <img className='social-icon' src='/images/youtube.png' alt='YouTube' />
+            <a href='https://www.youtube.com/' target='_blank' rel='noopener noreferrer'>
+              <img className='social-icon' src='/image/youtube.png' alt='YouTube' />
             </a>
           </div>
         </div>
       </div>
       <div className='footer-bottom'>
-        <p>&copy; {new Date().getFullYear()} Fulton Mind Matters - All Rights Reserved</p>
+        <div>&copy; {new Date().getFullYear()} Fulton Mind Matters - All Rights Reserved</div>
       </div>
     </div>
   );

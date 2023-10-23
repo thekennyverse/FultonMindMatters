@@ -58,19 +58,28 @@ const questions = [
 ];
 
 function Home() {
+  const [quest, setQuest] = useState(questions);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [userAnswers, setUserAnswers] = useState([]);
   const [showExplanation, setShowExplanation] = useState(false);
+  const [showThanks, setShowThanks] = useState(false);
+  const [event, SetEvent] = useState(null);
 
-  const handleAnswerSelect = (selectedAnswer) => {
+  const handleAnswerSelect = (selectedAnswer, event) => {
     const updatedAnswers = [...userAnswers, selectedAnswer];
     setUserAnswers(updatedAnswers);
     setShowExplanation(true);
   };
 
   const nextQuestion = () => {
-    setCurrentQuestion(currentQuestion + 1);
-    setShowExplanation(false);
+    SetEvent(null)
+    if (currentQuestion + 1 >= quest.length) {
+      setShowThanks(true);
+      setShowExplanation(false);
+    } else {
+      setCurrentQuestion(currentQuestion + 1);
+      setShowExplanation(false);
+    }
   };
 
   return (
@@ -99,22 +108,41 @@ function Home() {
 
 
 
-        <p>{questions[currentQuestion].question}</p>
-        <div className="options">
-          {questions[currentQuestion].options.map((option, index) => (
-            <div key={index} className="option">
-              <input
-                type="radio"
-                id={`option${index}`}
-                name="quizOption"
-                value={option}
-                onChange={() => handleAnswerSelect(option)}
-              />
-              <label htmlFor={`option${index}`}>{option}</label>
-            </div>
-          ))}
-        </div>
-        {showExplanation && (
+        
+
+        {showThanks 
+        ? (
+          <div className="thank_you">
+            <p>Thank you for taking a moment to take this quiz!</p>
+          </div>
+        )
+        :
+        (
+        <>
+          <p>{questions[currentQuestion].question}</p> 
+          <div className="options">
+            {questions[currentQuestion].options.map((option, index) => (
+              <div key={index} className="option">
+                {showExplanation == false ?
+                <>
+                  <input
+                    type="radio"
+                    id={`option${index}`}
+                    name="quizOption"
+                    value={option}
+                    onChange={(e) => handleAnswerSelect(option, e)}
+                  />
+                  <label htmlFor={`option${index}`}>{option}</label>
+                </>
+                : null
+                }
+                
+              </div>
+            ))}
+          </div>
+        </>
+        )}
+        {showExplanation && showThanks == false && (
           <div className="explanation">
             <p><strong>Correct Answer:</strong> {questions[currentQuestion].correctAnswer}</p>
             <p><em>Explanation:</em> {questions[currentQuestion].explanation}</p>
