@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
-import '/Users/kennyverse/Digitalcraft/Mental Health Project/fultonmindmatters/src/components/contact.css'; 
+import './contact.css'; 
 
 
 
